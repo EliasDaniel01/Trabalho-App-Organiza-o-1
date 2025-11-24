@@ -1,13 +1,40 @@
-> Why do I have a folder named ".expo" in my project?
+📦 App de Organização de Produtos
 
-The ".expo" folder is created when an Expo project is started using "expo start" command.
+Aplicativo mobile feito com React Native + Expo, usado para cadastrar e organizar produtos.
 
-> What do the files contain?
+🚀 Como rodar
 
-- "devices.json": contains information about devices that have recently opened this project. This is used to populate the "Development sessions" list in your development builds.
-- "settings.json": contains the server configuration that is used to serve the application manifest.
+Instale dependências:
 
-> Should I commit the ".expo" folder?
+npm install
 
-No, you should not share the ".expo" folder. It does not contain any information that is relevant for other developers working on the project, it is specific to your machine.
-Upon project creation, the ".expo" folder is already added to your ".gitignore" file.
+
+Inicie o projeto:
+
+npx expo start
+
+
+Abra no celular com Expo Go:
+
+Android: Expo Go → Scan QR Code
+
+iOS: Câmera → escanear QR → abrir no Expo Go
+
+PC e celular devem estar na mesma rede Wi-Fi.
+
+📂 Sobre a pasta .expo
+
+Criada automaticamente quando rodamos expo start
+
+Contém arquivos internos do ambiente:
+
+devices.json: dispositivos que abriram o projeto
+
+settings.json: configurações do servidor
+
+Não deve ser commitada (já está no .gitignore)
+
+🧪 Scripts úteis
+npx expo start --android
+npx expo start --ios
+npx expo start --web
